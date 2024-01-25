@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!-- HTML 버전 5 문서라고 선언 -->
+<html lang="en">
+  <!-- 기본 사이트 언어 : 영어 -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <!-- charset : character set, UTF-8 : 다국어 사이트 지원 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 반응형 웹을 위한 모바일 세팅. 이걸 안 적으면 모바일에서도 pc버전 화면이 나옴-->
+    <title>Intel</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="icon" href="./img/intel-icon-48x48.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- mousecursor -->
+    <div class="mouse_wrap">
+      <div class="mouse_cursor"></div>
+      <div class="mouse_cursor2"></div>
+    </div>
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+    <!-- header -->
+    <header class="nav-down" id="header_nav">
+      <nav>
+        <a href="#section01">
+          <img src="./img/intel_logo.png" class="logo" id="logo" />
+        </a>
+        <img
+          src="./img/header_menu1.png"
+          class="header_menu1"
+          onclick="menuOpen()"
+        />
+      </nav>
+    </header>
+    <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+    <!-- menu -->
+    <section class="menu">
+      <div class="menu_container">
+        <!-- <img class="intro-img3" src="./img/intro04.png" alt="" />
+        <img class="notebook-img4" src="./img/notebook04.jpg" alt="" />
+        <img class="cpu-img4" src="./img/cpu04.jpg" alt="" /> -->
+        <a onclick="menuCloseClick()">
+          <img class="menu_close" src="./img/close.png" alt="" />
+        </a>
+        <ul class="effect">
+          <a
+            href="#intro"
+            class="menu_intro"
+            onclick="menuItemClick()"
+            onmouseover="hoverIntro()"
+            onmouseout="outIntro()"
+          >
+            <img class="intro-img1" src="./img/intro01.png" alt="" />
+            <img class="intro-img2" src="./img/intro02.png" alt="" />
+          </a>
+          <a
+            href="#section05"
+            class="menu_cpu"
+            onclick="menuItemClick()"
+            onmouseover="hoverCpu()"
+            onmouseout="outCpu()"
+          >
+            <img class="cpu-img1" src="./img/cpu01.png" alt="" />
+            <img class="cpu-img3" src="./img/cpu03.png" alt="" />
+            <img class="cpu-img2" src="./img/cpu02.png" alt="" />
+          </a>
+          <a
+            href="#section09"
+            class="menu_notebook"
+            onclick="menuItemClick()"
+            onmouseover="hoverNotebook()"
+            onmouseout="outNotebook()"
+          >
+            <img class="notebook-img1" src="./img/notebook01.png" alt="" />
+            <img class="notebook-img3" src="./img/notebook03.svg" alt="" />
+            <img class="notebook-img2" src="./img/notebook02.png" alt="" />
+          </a>
+          <a
+            href="#gpu_start"
+            class="menu_gpu"
+            onclick="menuItemClick()"
+            onmouseover="hoverGpu()"
+            onmouseout="outGpu()"
+          >
+            <img class="gpu-img1" src="./img/gpu01.png" alt="" />
+            <img class="gpu-img2" src="./img/gpu02.png" alt="" />
+            <img class="gpu-img3" src="./img/gpu03.png" alt="" />
+          </a>
+        </ul>
+      </div>
+    </section>
+
+    <main>
+      <!-- section01 -->
+      <section class="section01" id="intro">
+        <div class="section01_container">
+          <video
+            src="./video/intel_mains.mp4"
+            autoplay
+            muted
+            loop
+            class="main_video"
+          ></video>
+          <div class="grid-overlay"></div>
+        </div>
+      </section>
+      <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+      <!-- section02 -->
+      <section class="section02">
+        <div class="section02_container">
+          <img class="section02_intel" src="./img/section02_intel.png" alt="" />
+          <img class="section02_leads" src="./img/section02_leads.png" alt="" />
+          <img class="section02_in" src="./img/section02_in.png" alt="" />
+          <img
+            class="section02_semiconductor"
+            src="./img/section02_semiconductor.png"
+            alt=""
+          />
+          <img class="section02_tech" src="./img/section02_tech.png" alt="" />
+          <img
+            class="section02_since1968"
+            src="./img/section02_since1968.png"
+            alt=""
+          />
+          <img class="section02_img" src="./img/section02_img.png" alt="" />
+          <img
+            class="section02_smalltext"
+            src="./img/section02_smalltext.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+
+      <!-- section03 -->
+      <section class="section03">
+        <div class="section03_container">
+          <img class="it" src="./img/section03_It.png" alt="" />
+          <img class="starts" src="./img/section03_Starts.png" alt="" />
+          <img class="with" src="./img/section03_With.png" alt="이미지" />
+          <img class="intel" src="./img/section03_intel.png" alt="이미지" />
+          <video
+            src="./video/intel_brand.mp4"
+            class="intel_brand"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+      </section>
+
+      <!-- section04 -->
+      <section class="section04">
+        <div class="section04_container">
+          <img class="notebook_left" src="./img/section04_left.png" alt="" />
+          <img class="notebook_right" src="./img/section04_right.png" alt="" />
+          <img
+            class="notebook_center"
+            src="./img/section04_center.png"
+            alt=""
+          />
+          <img class="ahead" src="./img/section04_LeapAhead.png" alt="" />
+          <a
+            class="simplicity"
+            onmouseover="hoverSimplicity()"
+            onmouseout="outSimplicity()"
+          >
+            <img
+              class="simplicity-img1"
+              src="./img/simplicity-img1.png"
+              alt=""
+            />
+            <img
+              class="simplicity-img2"
+              src="./img/simplicity-img2.png"
+              alt=""
+            />
+          </a>
+          <a
+            class="confidence"
+            onmouseover="hoverConfidence()"
+            onmouseout="outConfidence()"
+          >
+            <img
+              class="confidence-img1"
+              src="./img/confidence-img1.png"
+              alt=""
+            />
+            <img
+              class="confidence-img2"
+              src="./img/confidence-img2.png"
+              alt=""
+            />
+          </a>
+          <a
+            class="innovation"
+            onmouseover="hoverInnovation()"
+            onmouseout="outInnovation()"
+          >
+            <img
+              class="innovation-img1"
+              src="./img/innovation-img1.png"
+              alt=""
+            />
+            <img
+              class="innovation-img2"
+              src="./img/innovation-img2.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </section>
+
+      <!-- section05 -->
+      <section class="section05" id="section05">
+        <div class="section05_container">
+          <img class="section05_bg" src="./img/section05_bg.png" alt="" />
+          <img
+            class="section05_text01"
+            src="./img/section05_text01.png"
+            alt=""
+          />
+          <img
+            class="section05_text02"
+            src="./img/section05_text02.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- section06 -->
+      <section class="section06">
+        <div class="section06_container">
+          <img
+            class="sc06_maintext"
+            src="./img/section06_maintext.png"
+            alt=""
+          />
+          <img class="sc06_bg" src="./img/section06_bg.png" alt="" />
+          <img class="sc06_text01" src="./img/section06_text01.png" alt="" />
+          <img class="sc06_text02" src="./img/section06_text02.png" alt="" />
+          <img class="sc06_text03" src="./img/section06_text03.png" alt="" />
+          <img class="sc06_text04" src="./img/section06_text04.png" alt="" />
+          <img class="sc06_ct01" src="./img/section06_content01.png" alt="" />
+          <img class="sc06_ct02" src="./img/section06_content02.png" alt="" />
+          <img class="sc06_ct03" src="./img/section06_content03.png" alt="" />
+          <img class="sc06_ct04" src="./img/section06_content04.png" alt="" />
+          <img class="sc06_ct05" src="./img/section06_content05.png" alt="" />
+        </div>
+      </section>
+
+      <!-- 가로스크롤 -->
+      <section class="container_main" id="container_main">
+        <!-- section07 -->
+        <section class="section07 panel" id="section07">
+          <div class="section07_container">
+            <img
+              class="section07_chapter01"
+              src="./img/section07_chapter01.png"
+              alt=""
+            />
+            <img
+              class="section07_text01"
+              src="./img/section07_text01.png"
+              alt=""
+            />
+            <img
+              class="section07_text02"
+              src="./img/section07_text02.png"
+              alt=""
+            />
+            <img
+              class="section07_text03"
+              src="./img/section07_text03.png"
+              alt=""
+            />
+            <img
+              class="section07_text04"
+              src="./img/section07_text04.png"
+              alt=""
+            />
+            <img
+              class="section07_text05"
+              src="./img/section07_text05.png"
+              alt=""
+            />
+            <img
+              class="section07_text06"
+              src="./img/section07_text06.png"
+              alt=""
+            />
+            <img
+              class="section07_text07"
+              src="./img/section07_text07.png"
+              alt=""
+            />
+            <img
+              class="section07_leftbg"
+              src="./img/section07_leftbg.gif"
+              alt=""
+            />
+            <img
+              class="section07_brain"
+              src="./img/section07_brain.png"
+              alt=""
+            />
+            <img class="section07_cube" src="./img/section07_cube.png" alt="" />
+            <img class="section07_star" src="./img/section07_star.png" alt="" />
+          </div>
+        </section>
+
+        <!-- section08 -->
+        <section class="section08 panel">
+          <div class="section08_container">
+            <div class="cover">
+              <p class="first-parallel"></p>
+            </div>
+            <div class="cover">
+              <p class="second-parallel"></p>
+            </div>
+            <img class="section08_bg" src="./img/section08_bg.jpg" alt="" />
+            <img class="section08_fly" src="./img/section08_fly.png" alt="" />
+            <img class="section08_cpu" src="./img/section08_cpu.png" alt="" />
+          </div>
+        </section>
+
+        <!-- section09 -->
+        <section class="section09 panel" id="section09">
+          <div class="section09_container">
+            <img
+              class="section09_notebook"
+              src="./img/section09_notebook.png"
+              alt=""
+            />
+            <video
+              class="section09_logo"
+              src="./video/section09_logo.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+            <img
+              class="section09_chapter02"
+              src="./img/section09_chapter02.png"
+              alt=""
+            />
+            <img
+              class="section09_laptops"
+              src="./img/section09_laptops.png"
+              alt=""
+            />
+            <img class="section09_for" src="./img/section09_for.png" alt="" />
+            <img
+              class="section09_performance"
+              src="./img/section09_performance.png"
+              alt=""
+            />
+            <img class="section09_and" src="./img/section09_and.png" alt="" />
+            <img
+              class="section09_portability"
+              src="./img/section09_portability.png"
+              alt=""
+            />
+            <img
+              class="section09_smalltext"
+              src="./img/section09_smalltext.png"
+              alt=""
+            />
+          </div>
+        </section>
+
+        <!-- section10 -->
+        <section class="section10 panel">
+          <div class="section10_container">
+            <img
+              class="section10_there"
+              src="./img/section10_there.png"
+              alt=""
+            />
+            <img class="section10_like" src="./img/section10_like.png" alt="" />
+            <img
+              class="section10_everything"
+              src="./img/section10_everything.png"
+              alt=""
+            />
+            <img class="section10_star" src="./img/section10_star.png" alt="" />
+            <img class="section10_cube" src="./img/section10_cube.png" alt="" />
+            <img
+              class="section10_smalltext"
+              src="./img/section10_smalltext.png"
+              alt=""
+            />
+            <video
+              class="section10_leftvideo"
+              src="./video/section10_leftvideo.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+            <video
+              class="section10_rightvideo"
+              src="./video/section10_rightvideo.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+        </section>
+
+        <!-- section11 -->
+        <section class="section11 panel" id="gpu_start">
+          <div class="section11_container">
+            <img
+              class="section11_leftgpu"
+              src="./img/section11_leftgpu.png"
+              alt=""
+            />
+            <img
+              class="section11_rightgpu"
+              src="./img/section11_rightgpu.png"
+              alt=""
+            />
+            <img
+              class="section11_chapter03"
+              src="./img/section11_chapter03.png"
+              alt=""
+            />
+            <img
+              class="section11_graphics"
+              src="./img/section11_graphics.png"
+              alt=""
+            />
+            <img
+              class="section11_text01"
+              src="./img/section11_text01.png"
+              alt=""
+            />
+            <img
+              class="section11_text02"
+              src="./img/section11_text02.png"
+              alt=""
+            />
+            <!-- mouse wheel -->
+            <a href="#" class="scroll-down">
+              <!-- 마우스 휠 효과를 줄 태그 -->
+              <div class="scroll">
+                <!-- 마우스 모양 도형 -->
+                <span class="scroll-dot"></span>
+                <!-- 마우스 휠 움직임 효과를 줄 구체 -->
+              </div>
+              <div class="arrow-down"></div>
+              <!-- 마우스 이미지 아래쪽의 화살표 -->
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <!-- section12 -->
+      <section class="section12">
+        <div class="section12_container">
+          <video
+            class="section12_gpuvideo"
+            src="./video/gpu1.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+      </section>
+
+      <!-- section13 -->
+      <section class="section13">
+        <div class="section13_container">
+          <img class="section13_bg" src="./img/section13_bg.png" alt="" />
+          <img class="section13_table" src="./img/section13_table.png" alt="" />
+          <img
+            class="section13_arcicon"
+            src="./img/section13_arcicon.png"
+            alt=""
+          />
+          <img
+            class="section13_text01"
+            src="./img/section13_text01.png"
+            alt=""
+          />
+          <img
+            class="section13_text02"
+            src="./img/section13_text02.png"
+            alt=""
+          />
+          <img
+            class="section13_text03"
+            src="./img/section13_text03.png"
+            alt=""
+          />
+          <img
+            class="section13_text04"
+            src="./img/section13_text04.png"
+            alt=""
+          />
+          <img
+            class="section13_smalltext"
+            src="./img/section13_smalltext.png"
+            alt=""
+          />
+          <video
+            class="section13_a580"
+            src="./video/section13_a580.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+          <video
+            class="section13_a770"
+            src="./video/section13_a770.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+      </section>
+
+      <!-- section14 -->
+      <section class="section14">
+        <div class="section14_container">
+          <img class="section14_bg" src="./img/section14_bg.jpg" alt="" />
+          <canvas id="canvas"></canvas>
+
+          <div id="buffer"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <img class="footer_logo" src="./img/footer_logo.png" alt="" />
+      <img class="footer_copyright" src="./img/footer_copyright.png" alt="" />
+      <img class="footer_facebook" src="./img/footer_facebook.png" alt="" />
+      <img class="footer_instagram" src="./img/footer_instagram.png" alt="" />
+      <img class="footer_twitter" src="./img/footer_twitter.png" alt="" />
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easeScroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
+    <script src="js/scrollsmooth.js"></script>
+    <script src="js/gsap.js"></script>
+    <script src="js/scrollTrigger.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/mousecursor.js"></script>
+    <script src="js/infinitetext.js"></script>
+    <script src="js/canvas2d.js"></script>
+    <script src="js/scrollmenubar.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
